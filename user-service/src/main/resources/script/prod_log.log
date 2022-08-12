@@ -1,0 +1,176 @@
+2022-08-12 12:48:05.809  INFO 9924 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-12 12:48:23.210  INFO 14676 --- [restartedMain] c.m.userservice.UserServiceApplication   : Starting UserServiceApplication using Java 11.0.15 on DESKTOP-SFLHE4I with PID 14676 (E:\0-SoftwareEng\0-APP\github\Milad-UserService-SpringBoot-JWT\user-service\target\classes started by Milad in E:\0-SoftwareEng\0-APP\github\Milad-UserService-SpringBoot-JWT\user-service)
+2022-08-12 12:48:23.214  INFO 14676 --- [restartedMain] c.m.userservice.UserServiceApplication   : The following 1 profile is active: "prod"
+2022-08-12 12:48:23.319  INFO 14676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-12 12:48:23.320  INFO 14676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-12 12:48:24.561  INFO 14676 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-12 12:48:24.575 DEBUG 14676 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for JPA repositories in packages com.milad.userservice.
+2022-08-12 12:48:24.596 DEBUG 14676 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [E:\0-SoftwareEng\0-APP\github\Milad-UserService-SpringBoot-JWT\user-service\target\classes\com\milad\userservice\repository\PersonalityRepository.class]
+2022-08-12 12:48:24.597 DEBUG 14676 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [E:\0-SoftwareEng\0-APP\github\Milad-UserService-SpringBoot-JWT\user-service\target\classes\com\milad\userservice\repository\RoleRepository.class]
+2022-08-12 12:48:24.597 DEBUG 14676 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [E:\0-SoftwareEng\0-APP\github\Milad-UserService-SpringBoot-JWT\user-service\target\classes\com\milad\userservice\repository\UserRepository.class]
+2022-08-12 12:48:24.671  INFO 14676 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
+2022-08-12 12:48:25.612  INFO 14676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-08-12 12:48:25.624  INFO 14676 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-12 12:48:25.624  INFO 14676 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-12 12:48:25.734  INFO 14676 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-12 12:48:25.735  INFO 14676 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2414 ms
+2022-08-12 12:48:25.780  INFO 14676 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-12 12:48:26.252  INFO 14676 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-12 12:48:26.268  INFO 14676 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/user-service-db'
+2022-08-12 12:48:26.477  INFO 14676 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-12 12:48:26.553  INFO 14676 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-12 12:48:26.785  INFO 14676 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-12 12:48:26.934  INFO 14676 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-12 12:48:28.061  INFO 14676 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-12 12:48:28.074  INFO 14676 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-12 12:48:28.139 DEBUG 14676 --- [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Initializing JpaMetamodelMappingContext…
+2022-08-12 12:48:28.153 DEBUG 14676 --- [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Finished initializing JpaMetamodelMappingContext!
+2022-08-12 12:48:28.352 DEBUG 14676 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.milad.userservice.repository.UserRepository…
+2022-08-12 12:48:28.458 DEBUG 14676 --- [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query User.findUserByUserName
+2022-08-12 12:48:28.463 DEBUG 14676 --- [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query User.findUserByUserName
+2022-08-12 12:48:28.525 DEBUG 14676 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.milad.userservice.repository.UserRepository.
+2022-08-12 12:48:28.687  WARN 14676 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-12 12:48:28.739 DEBUG 14676 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.milad.userservice.repository.RoleRepository…
+2022-08-12 12:48:28.768 DEBUG 14676 --- [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query Role.findRoleByRoleName
+2022-08-12 12:48:28.768 DEBUG 14676 --- [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Role.findRoleByRoleName
+2022-08-12 12:48:28.772 DEBUG 14676 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.milad.userservice.repository.RoleRepository.
+2022-08-12 12:48:28.805 DEBUG 14676 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.milad.userservice.repository.PersonalityRepository…
+2022-08-12 12:48:28.830 DEBUG 14676 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.milad.userservice.repository.PersonalityRepository.
+2022-08-12 12:48:28.953  WARN 14676 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/resurces/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-08-12 12:48:28.954  INFO 14676 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/resurces/**']
+2022-08-12 12:48:29.009  INFO 14676 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8b3e0ef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@fb7c2cc, org.springframework.security.web.context.SecurityContextPersistenceFilter@c05f0d1, org.springframework.security.web.header.HeaderWriterFilter@42f6dcbd, org.springframework.security.web.authentication.logout.LogoutFilter@3413cef2, com.milad.userservice.auth.filter.JwtAuthorizationFilter@6f15fa99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77a9ee03, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15486d4d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b5141c4, org.springframework.security.web.session.SessionManagementFilter@7e9f3766, org.springframework.security.web.access.ExceptionTranslationFilter@24cbecb7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46edb6d1]
+2022-08-12 12:48:29.228 DEBUG 14676 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-08-12 12:48:29.332 DEBUG 14676 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2022-08-12 12:48:29.362 DEBUG 14676 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-08-12 12:48:29.378 DEBUG 14676 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-08-12 12:48:29.531  INFO 14676 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-12 12:48:29.593  INFO 14676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-08-12 12:48:29.612  INFO 14676 --- [restartedMain] c.m.userservice.UserServiceApplication   : Started UserServiceApplication in 7.379 seconds (JVM running for 9.305)
+2022-08-12 12:49:41.436  INFO 9792 --- [restartedMain] c.m.userservice.UserServiceApplication   : Starting UserServiceApplication using Java 11.0.15 on DESKTOP-SFLHE4I with PID 9792 (E:\0-SoftwareEng\0-APP\github\Milad-UserService-SpringBoot-JWT\user-service\target\classes started by Milad in E:\0-SoftwareEng\0-APP\github\Milad-UserService-SpringBoot-JWT\user-service)
+2022-08-12 12:49:41.438  INFO 9792 --- [restartedMain] c.m.userservice.UserServiceApplication   : The following 1 profile is active: "prod"
+2022-08-12 12:49:41.506  INFO 9792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-12 12:49:41.507  INFO 9792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-12 12:49:42.619  INFO 9792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-12 12:49:42.633 DEBUG 9792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for JPA repositories in packages com.milad.userservice.
+2022-08-12 12:49:42.655 DEBUG 9792 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [E:\0-SoftwareEng\0-APP\github\Milad-UserService-SpringBoot-JWT\user-service\target\classes\com\milad\userservice\repository\PersonalityRepository.class]
+2022-08-12 12:49:42.655 DEBUG 9792 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [E:\0-SoftwareEng\0-APP\github\Milad-UserService-SpringBoot-JWT\user-service\target\classes\com\milad\userservice\repository\RoleRepository.class]
+2022-08-12 12:49:42.655 DEBUG 9792 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [E:\0-SoftwareEng\0-APP\github\Milad-UserService-SpringBoot-JWT\user-service\target\classes\com\milad\userservice\repository\UserRepository.class]
+2022-08-12 12:49:42.728  INFO 9792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
+2022-08-12 12:49:43.692  INFO 9792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-08-12 12:49:43.704  INFO 9792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-12 12:49:43.705  INFO 9792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-12 12:49:43.817  INFO 9792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-12 12:49:43.817  INFO 9792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2309 ms
+2022-08-12 12:49:43.864  INFO 9792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-12 12:49:44.344  INFO 9792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-12 12:49:44.361  INFO 9792 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/user-service-db'
+2022-08-12 12:49:44.554  INFO 9792 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-12 12:49:44.635  INFO 9792 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-12 12:49:44.844  INFO 9792 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-12 12:49:44.993  INFO 9792 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-12 12:49:46.082 DEBUG 9792 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    create table address (
+       address_id bigint not null auto_increment,
+        created_at datetime,
+        updated_at datetime,
+        city varchar(255),
+        full_address varchar(255),
+        postal_code varchar(255),
+        tittle varchar(255),
+        personality_id bigint not null,
+        primary key (address_id)
+    ) engine=InnoDB
+2022-08-12 12:49:46.890 DEBUG 9792 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    create table personality (
+       personality_id bigint not null auto_increment,
+        created_at datetime,
+        updated_at datetime,
+        email varchar(255) not null,
+        first_name varchar(255) not null,
+        image_url varchar(255),
+        last_name varchar(255) not null,
+        phone varchar(255),
+        primary key (personality_id)
+    ) engine=InnoDB
+2022-08-12 12:49:47.344 DEBUG 9792 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    create table user (
+       user_id bigint not null auto_increment,
+        created_at datetime,
+        updated_at datetime,
+        active bit,
+        password varchar(250) not null,
+        user_name varchar(50) not null,
+        personality_id bigint not null,
+        role_id bigint not null,
+        primary key (user_id)
+    ) engine=InnoDB
+2022-08-12 12:49:47.798 DEBUG 9792 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table address 
+       drop index UK_fkjifar7d7ih5p51t6mxx9blx
+2022-08-12 12:49:47.817 DEBUG 9792 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table address 
+       add constraint UK_fkjifar7d7ih5p51t6mxx9blx unique (postal_code)
+2022-08-12 12:49:48.064 DEBUG 9792 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table personality 
+       drop index UK_m442mg40nfqgsvr5bhwdynkby
+2022-08-12 12:49:48.069 DEBUG 9792 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table personality 
+       add constraint UK_m442mg40nfqgsvr5bhwdynkby unique (email)
+2022-08-12 12:49:48.310 DEBUG 9792 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table user 
+       drop index UK_lqjrcobrh9jc8wpcar64q1bfh
+2022-08-12 12:49:48.317 DEBUG 9792 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table user 
+       add constraint UK_lqjrcobrh9jc8wpcar64q1bfh unique (user_name)
+2022-08-12 12:49:48.654 DEBUG 9792 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table address 
+       add constraint FKgmpnhr5aemfa7iyuentkgecgb 
+       foreign key (personality_id) 
+       references personality (personality_id)
+2022-08-12 12:49:49.722 DEBUG 9792 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table user 
+       add constraint FKje4w4b99wu9ced9t3a8dl1pbl 
+       foreign key (personality_id) 
+       references personality (personality_id)
+2022-08-12 12:49:50.921 DEBUG 9792 --- [restartedMain] org.hibernate.SQL                        : 
+    
+    alter table user 
+       add constraint FKn82ha3ccdebhokx3a8fgdqeyy 
+       foreign key (role_id) 
+       references role (role_id)
+2022-08-12 12:49:52.432  INFO 9792 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-12 12:49:52.454  INFO 9792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-12 12:49:52.512 DEBUG 9792 --- [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Initializing JpaMetamodelMappingContext…
+2022-08-12 12:49:52.523 DEBUG 9792 --- [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Finished initializing JpaMetamodelMappingContext!
+2022-08-12 12:49:52.690 DEBUG 9792 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.milad.userservice.repository.UserRepository…
+2022-08-12 12:49:52.777 DEBUG 9792 --- [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query User.findUserByUserName
+2022-08-12 12:49:52.781 DEBUG 9792 --- [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query User.findUserByUserName
+2022-08-12 12:49:52.828 DEBUG 9792 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.milad.userservice.repository.UserRepository.
+2022-08-12 12:49:52.954  WARN 9792 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-12 12:49:52.998 DEBUG 9792 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.milad.userservice.repository.RoleRepository…
+2022-08-12 12:49:53.019 DEBUG 9792 --- [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query Role.findRoleByRoleName
+2022-08-12 12:49:53.020 DEBUG 9792 --- [restartedMain] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Role.findRoleByRoleName
+2022-08-12 12:49:53.023 DEBUG 9792 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.milad.userservice.repository.RoleRepository.
+2022-08-12 12:49:53.049 DEBUG 9792 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.milad.userservice.repository.PersonalityRepository…
+2022-08-12 12:49:53.068 DEBUG 9792 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.milad.userservice.repository.PersonalityRepository.
+2022-08-12 12:49:53.162  WARN 9792 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/resurces/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-08-12 12:49:53.163  INFO 9792 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/resurces/**']
+2022-08-12 12:49:53.209  INFO 9792 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3ca1dba8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bcd5c7a, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e65d630, org.springframework.security.web.header.HeaderWriterFilter@4ea7ad6, org.springframework.security.web.authentication.logout.LogoutFilter@62738bcf, com.milad.userservice.auth.filter.JwtAuthorizationFilter@46dabd2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2efc4feb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47b35813, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@496cd6c, org.springframework.security.web.session.SessionManagementFilter@74552c8b, org.springframework.security.web.access.ExceptionTranslationFilter@26e885ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54c9d6b1]
+2022-08-12 12:49:53.399 DEBUG 9792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-08-12 12:49:53.491 DEBUG 9792 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2022-08-12 12:49:53.518 DEBUG 9792 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-08-12 12:49:53.532 DEBUG 9792 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-08-12 12:49:53.659  INFO 9792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-12 12:49:53.712  INFO 9792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-08-12 12:49:53.728  INFO 9792 --- [restartedMain] c.m.userservice.UserServiceApplication   : Started UserServiceApplication in 13.171 seconds (JVM running for 15.028)

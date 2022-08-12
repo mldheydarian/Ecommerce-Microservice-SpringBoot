@@ -1,0 +1,36 @@
+server:
+  port: 8085
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/user-service-db
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        use_sql_comments: true
+        format_sql: true
+  flyway:
+    url: jdbc:mysql://localhost:3306/user-service-db
+    user: root
+    password: 123456
+    group: true
+    enabled: false #shuld be false in prod#
+    baseline-on-migrate: true
+
+logging:
+  file:
+    name: src/main/resources/script/prod_log.log
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+      springframework:
+        web: DEBUG
+        data: DEBUG

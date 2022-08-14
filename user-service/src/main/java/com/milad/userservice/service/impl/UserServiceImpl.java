@@ -61,4 +61,11 @@ public class UserServiceImpl implements UserService {
 
        return UserMapping.getDto(userRepository.save(user));
     }
+
+    @Override
+    public UserDto getUserByUserName(String userName) {
+        return UserMapping.getDto(userRepository.findUserByUserName(userName));
+    }
+
+
 }

@@ -6,11 +6,9 @@ import com.milad.userservice.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.websocket.server.PathParam;
 import java.util.List;
 
 @RestController
@@ -30,7 +28,11 @@ public class UserResource {
      return new ResponseEntity(userService.getUserById(id),HttpStatus.OK);
 
     }
-
+    // http://server/api/user/?username=ahmad
+    @GetMapping("/")
+    public Long getUserIdByUserName(@RequestParam(value = "username") String userName) {
+        return userService.getUserByUserName(userName).getUserId();
+    }
    @GetMapping("")
     public ResponseEntity<List<UserDto>> getAllUsers(){
         List<UserDto> userDtos =  userService.getAllUsers();

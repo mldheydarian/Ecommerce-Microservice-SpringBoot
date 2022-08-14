@@ -1,5 +1,6 @@
 package com.milad.userservice.resource;
 
+import com.milad.userservice.dto.UserDto;
 import com.milad.userservice.model.User;
 import com.milad.userservice.service.UserService;
 import org.junit.jupiter.api.Assertions;
@@ -65,7 +66,7 @@ class UserResourceTest {
     void getUserById_whenUsersisExist_ShouldReturnUser()
     {
        // Mockito.when(userService.getUserById(1l)).thenReturn(dumpUser);
-        ResponseEntity<User> user = userResource.getUserById(1l);
+        ResponseEntity<UserDto> user = userResource.getUserById(1l);
         Assertions.assertEquals(user.getBody().getUserName(),dumpUser.getUserName());
         Assertions.assertEquals(user.getBody().getUserId(),dumpUser.getUserId());
 

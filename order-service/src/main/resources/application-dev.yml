@@ -1,9 +1,9 @@
 server:
-  port: 9001
+  port: 9002
 
 spring:
   datasource:
-    url: jdbc:h2:mem:ecom_user_service_db;
+    url: jdbc:h2:mem:ecom_order_service_db
     driverClassName: org.h2.Driver
     username: sa
     password:
@@ -22,7 +22,7 @@ spring:
         format_sql: true
 
   flyway:
-    url: jdbc:h2:mem:ecom_user_service_db;
+    url: jdbc:h2:mem:ecom_order_service_db
     user: sa
     password:
     group: true

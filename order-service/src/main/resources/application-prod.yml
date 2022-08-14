@@ -1,9 +1,9 @@
 server:
-  port: 9001
+  port: 9002
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/ecom_user_service_db
+    url: jdbc:mysql://localhost:3306/ecom_order_service_db
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -17,7 +17,7 @@ spring:
         use_sql_comments: true
         format_sql: true
   flyway:
-    url: jdbc:mysql://localhost:3306/ecom_user_service_db
+    url: jdbc:mysql://localhost:3306/ecom_order_service_db
     user: root
     password: 123456
     group: true

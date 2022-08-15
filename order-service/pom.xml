@@ -47,6 +47,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
  <!--********************Start  of  3th party dependency***************-->
         <dependency>
             <groupId>org.flywaydb</groupId>
@@ -72,8 +77,10 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-
     </dependencies>
+
+    <!--********************Start  of  dependencyManagement***************-->
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -85,9 +92,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-
-
 
 
     <build>

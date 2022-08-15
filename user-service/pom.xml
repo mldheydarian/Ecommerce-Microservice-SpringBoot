@@ -15,6 +15,7 @@
     <description>user-service</description>
     <properties>
         <java.version>11</java.version>
+     <spring-cloud.version>2021.0.3</spring-cloud.version>
     </properties>
     <dependencies>
  <!-- ***************Spring-Boot Starters*******************-->
@@ -47,8 +48,14 @@
             <scope>test</scope>
         </dependency>
 
-   <!--***********************End Of Spring Boot Starter****************-->
+        <!--********************Start  of  spring cloud  Starters***************-->
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+              <!--********************Start  of  3th party dependency***************-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -73,7 +80,19 @@
             <artifactId>flyway-mysql</artifactId>
         </dependency>
     </dependencies>
+    <!--********************Start  of  dependencyManagement***************-->
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>

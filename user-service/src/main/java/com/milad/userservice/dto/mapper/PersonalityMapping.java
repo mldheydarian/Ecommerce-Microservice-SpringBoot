@@ -2,7 +2,6 @@ package com.milad.userservice.dto.mapper;
 
 import com.milad.userservice.dto.PersonalityDto;
 import com.milad.userservice.model.Personality;
-
 import java.util.stream.Collectors;
 
 public interface PersonalityMapping {
@@ -14,7 +13,7 @@ public interface PersonalityMapping {
                 .imageUrl(personality.getImageUrl())
                 .email(personality.getEmail())
                 .phone(personality.getPhone())
-               .addressesDtos(personality.getAddresses()
+                .addressesDtos(personality.getAddresses()
                        .stream()
                        .map(AddressMapping::getDto)
                        .collect(Collectors.toList()))

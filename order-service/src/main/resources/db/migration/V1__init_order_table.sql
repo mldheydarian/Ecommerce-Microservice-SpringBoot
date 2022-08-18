@@ -13,7 +13,7 @@ CREATE TABLE orders
 INSERT INTO orders
     (order_date,order_fee,status,user_id)
 values
-       ('2020-01-01',1000,'done',1 ),
-       ('2020-01-04',6600,'shipping',1),
-       ('2020-01-05',2000,'wait-payment',2 ),
-       ('2020-01-05',30050,'done',3 );
+       ('2020-01-01',1000,'waiting-payment',1 ),
+       ('2020-01-04',6600,'preparing',1),
+       ('2020-01-05',2000,'in shipping',2 ),
+       ('2020-01-05',30050,'delivered',3 );

@@ -1,7 +1,7 @@
-package com.milad.orderservice.restclient.user.api;
+package com.milad.orderservice.clients.user.controller;
 
-import com.milad.orderservice.restclient.user.dto.UserDto;
-import com.milad.orderservice.restclient.user.service.UserClientService;
+import com.milad.orderservice.clients.user.dto.UserDto;
+import com.milad.orderservice.clients.user.service.UserClientService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,7 +14,7 @@ import java.util.Map;
 @RequestMapping("/api/users")
 @Slf4j
 
-public class UserAPI {
+public class UserController {
     @Autowired
      UserClientService userClientService;
 

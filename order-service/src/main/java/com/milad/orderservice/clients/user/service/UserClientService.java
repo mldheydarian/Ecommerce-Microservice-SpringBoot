@@ -1,6 +1,6 @@
-package com.milad.orderservice.restclient.user.service;
+package com.milad.orderservice.clients.user.service;
 
-import com.milad.orderservice.restclient.user.dto.UserDto;
+import com.milad.orderservice.clients.user.dto.UserDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

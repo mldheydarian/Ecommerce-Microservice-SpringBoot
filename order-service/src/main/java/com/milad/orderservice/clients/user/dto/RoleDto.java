@@ -1,4 +1,4 @@
-package com.milad.orderservice.restclient.user.dto;
+package com.milad.orderservice.clients.user.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -27,7 +27,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public OrderDto save(OrderDto orderDto, Map<String, String> headers) {
-
+        //call  http://user-service/api/users/ please set APIKey username=ahmad
         Long userId = userClientService.getUserByUserNameInHttpHeader(headers).getBody().getUserId();
         //or
         //Long userId=userClientService.getUserByUserNameInQueryParam(headers.get("username")).getBody().getUserId();

@@ -1,0 +1,24 @@
+server:
+  port: 9003
+
+spring:
+  jpa:
+    defer-datasource-initialization: true
+
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+      springframework:
+        web: DEBUG
+        data: DEBUG
+
+
+
+
+
+
+
+

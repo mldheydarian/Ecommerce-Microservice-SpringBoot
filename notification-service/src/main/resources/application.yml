@@ -1,0 +1,10 @@
+
+spring:
+  application:
+    name: notification-service
+  profiles:
+    active: dev
+
+
+
+

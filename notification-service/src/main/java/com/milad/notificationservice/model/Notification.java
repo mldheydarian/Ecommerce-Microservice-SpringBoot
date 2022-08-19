@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
 @Builder
@@ -24,5 +25,5 @@ public class Notification {
     private String toUserEmail;
     private String sender;
     private String message;
-    private LocalDateTime sentAt;
+    private Date sentAt;
 }

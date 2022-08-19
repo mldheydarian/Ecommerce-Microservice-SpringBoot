@@ -16,7 +16,7 @@ import java.util.Date;
 public class NotificationDto {
 
 
-   // private Long notificationId;
+    private Long notificationId;
 
     private Long toUserId;
     private String toUserEmail;

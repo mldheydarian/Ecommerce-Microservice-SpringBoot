@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/notification")
+@RequestMapping("/api/notifications")
 public class NotificationController {
 
 
     @Autowired
     NotificationClientServiceImpl notificationClientService;
 
-    @PostMapping("/send")
+    @PostMapping("")
     public String sendMassage(@RequestBody NotificationDto notificationDto) {
 
         notificationClientService.sendMassage(notificationDto);
@@ -26,10 +26,10 @@ public class NotificationController {
 
     }
 
-    @PostMapping("/OrderRegistere")
-    public String sendOrderRegisteredMessage(@RequestBody OrderDto dto) {
+    @PostMapping("/orderregistered")
+    public String sendOrderRegisteredMessage(@RequestBody OrderDto orderDto) {
 
-        return notificationClientService.sendOrderRegisteredMessage(dto);
+        return notificationClientService.sendOrderRegisteredMessage(orderDto);
 
     }
     public String sendOrderPayedMessage(OrderDto dto) {return null;}

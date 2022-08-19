@@ -35,8 +35,7 @@ public class NotificationClientServiceImpl implements NotificationClientService 
                 .sentAt(new Date())
                 .toUserId(dto.getUserId())
                 .build();
-        sendMassage(notificationDto);
-        return "Your Order Was Registered Correctly";
+        return  sendMassage(notificationDto);
     }
 
     @Override

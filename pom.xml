@@ -12,7 +12,8 @@
     <artifactId>Ecommerce</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Ecommerce</name>
-    <description>Ecommerce</description>
+    <description>Ecommerce  implemented in Spring Boot and Spring Cloud!</description>
+    <packaging>pom</packaging>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -43,7 +44,13 @@
 
 
     </dependencies>
-
+    <modules>
+        <module>service-discovery</module>
+        <module>user-service</module>
+        <module>order-service</module>
+        <module>payment-service</module>
+        <module>notification-service</module>
+    </modules>
     <build>
         <plugins>
             <plugin>

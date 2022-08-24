@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.web.servlet.MockMvc;
@@ -16,6 +17,9 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+
+
+/*
 @AutoConfigureMockMvc
 @SpringBootTest()
 //@RunWith(SpringRunner.class)
@@ -39,7 +43,7 @@ class UserResourceTest {
         //given
         User user = new User();
         user.setUserId(1l);
-        user.setUserName("mili");
+        user.setUserName("mld");
         //when
        // Mockito.when(userService.getUserById(1l)).thenReturn(user);
         //then
@@ -59,7 +63,7 @@ class UserResourceTest {
     {
         dumpUser = User.builder()
                 .userId(1l)
-                .userName("ahmad")
+                .userName("mld")
                 .build();
     }
     @Test
@@ -81,3 +85,5 @@ class UserResourceTest {
     }
 
 }
+
+*/

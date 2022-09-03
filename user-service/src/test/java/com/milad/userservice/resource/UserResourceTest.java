@@ -19,9 +19,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 
 
-/*
+
 @AutoConfigureMockMvc
-@SpringBootTest()
+@SpringBootTest
 //@RunWith(SpringRunner.class)
 class UserResourceTest {
     @Autowired
@@ -84,6 +84,8 @@ class UserResourceTest {
 
     }
 
+
+
 }
 
-*/
+

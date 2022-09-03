@@ -1,0 +1,18 @@
+
+server:
+  port: 9090
+
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        data: DEBUG
+      boot:
+        autoconfigure:
+          data:
+            rest: DEBUG
+            jpa: DEBUG
+            orm: DEBUG
+
